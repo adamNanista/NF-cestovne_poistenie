@@ -23,16 +23,17 @@
 <!-- END - Netfinancie.sk - kalkulačka - cp -->
 	
 	<script>
-		var iframe = document.getElementById('NfIFRM');
-		var head = iframe.contentWindow.document.getElementsByTagName("head")[0];
-		
-		var link = document.createElement('link');
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = 'https://adamnanista.github.io/NF-cestovne_poistenie/style.css';
 		
 		(function() {
-			console.log(iframe, head, link);
+			var iframe = document.getElementById('NfIFRM');
+			var head = iframe.contentWindow.document.getElementsByTagName("head")[0];
+		
+			var link = document.createElement('link');
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = 'https://adamnanista.github.io/NF-cestovne_poistenie/style.css';
+			
+			console.log(head);
 			head.appendChild(link);
 		})();
 
