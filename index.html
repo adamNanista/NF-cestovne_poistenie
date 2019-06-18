@@ -22,6 +22,19 @@
 <div style="font-family:Arial;color:#C0C0C0;font-size:10px;display:block;width:100%;text-align:center;padding-bottom:2px;"><a style="color:#C0C0C0;" href="https://www.netfinancie.sk/cestovne-poistenie/" title="Porovnajte si a uzatvorte cestovné poistenie online" target="_blank">Poistenie na dovolenku prostredníctvom Netfinancie.sk</a></div>
 <!-- END - Netfinancie.sk - kalkulačka - cp -->
 	
-	
+	<script>
+		var iframe = document.getElementById('NfIFRM');
+		var head = iframe.contentWindow.document.getElementsByTagName("head")[0];
+		
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = 'https://github.com/adamNanista/NF-cestovne_poistenie/style.css';
+		
+		(function() {
+			head.appendChild(link);
+		})();
+
+	</script>
 </body>
 </html>
